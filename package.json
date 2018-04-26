@@ -1,0 +1,30 @@
+{
+  "name": "mark-sky",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mark-sky/manba.git"
+  },
+  "keywords": [
+    "manba",
+    "date"
+  ],
+  "author": {
+    "name": "mark"
+  },
+  "license": "The MIT License",
+  "dependencies": {},
+  "bugs": {
+    "url": "https://github.com/mark-sky/manba/issues"
+  },
+  "scripts": {
+    "build": "uglifyjs ./manba.js -c -m -o build/manba.js",
+    "min": "babel build/manba.js --minified --no-babelrc -o build/manba.min.js",
+    "test": "mocha ./test/*.js",
+    "report": "mocha --reporter mochawesome"
+  },
+  "homepage": "https://github.com/mark-sky/manba#readme",
+  "readmeFilename": "README.md"
+}
